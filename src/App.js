@@ -37,7 +37,7 @@ function App() {
   }, [playerChoice, computerChoice, gameState]);
 
   function playChoice(choice) {
-    setGameState("active")
+    setGameState("active");
     setPlayerChoice(choice);
   }
 
@@ -46,9 +46,15 @@ function App() {
       <div className="App">
         <h1>Rock, Paper, Scissors</h1>
         <div className="container">
-          <button className="img-btn" onClick={() => playChoice(1)}><img src={rock} alt="rock" /></button>
-          <button className="img-btn" onClick={() => playChoice(2)}><img src={paper} alt="paper" /></button>
-          <button className="img-btn" onClick={() => playChoice(3)}><img src={scissors} alt="scissors" /></button>
+          <button className="img-btn" onClick={() => playChoice(1)}>
+            <img src={rock} alt="rock" />
+          </button>
+          <button className="img-btn" onClick={() => playChoice(2)}>
+            <img src={paper} alt="paper" />
+          </button>
+          <button className="img-btn" onClick={() => playChoice(3)}>
+            <img src={scissors} alt="scissors" />
+          </button>
         </div>
       </div>
     );
